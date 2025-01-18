@@ -19,12 +19,6 @@ RButton::
     MouseClick("Right", , , , , "D")
     global aiming := true
 }
-;Controller
-Joy7::
-{
-    global firing := true
-}
-
 ;aiming disabled
 ;KBM
 RButton up::
@@ -32,45 +26,26 @@ RButton up::
     MouseClick("Right", , , , , "U")
     global aiming := false
 }
-;Controller
-Joy7 up::
-{
-    global aiming := false
-}
 
 
 
-;Enabled Firing
+;Firing enabled
 ;KBM
 LButton::
 {
     MouseClick("Left", , , , , "D")
     global firing := true
 }
-;Controller
-Joy8::
-{
-    global firing := true
-}
-
-
-
-;Disabled Firing
+;Firing disabled
 ;KBM
 LButton up:: 
 {
     MouseClick("Left", , , , , "U")
     global firing := false
 }
-;Controller
-Joy8 up::
-{
-    global firing := false
-}
 
 
 
-;Controller doesn't get a passthrough
 ;passthrough enabled
 XButton1::
 {
